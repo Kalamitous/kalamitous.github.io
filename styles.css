@@ -112,7 +112,7 @@ ul {
         float: left;
         display: inline;
         width: 200px;
-        padding: 36px 0px 36px 0px;
+        padding: 48px 0px 48px 0px;
         background-color: #45a1de;
         color: #ecf0f1;
     }
@@ -144,7 +144,7 @@ ul {
 
 @media (min-width: 1280px) {
     #logoText {
-        line-height: 30%;
+        line-height: 50%;
         color: white;
         font-size: 12px;
         font-style: italic;
