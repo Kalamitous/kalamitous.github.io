@@ -21,7 +21,7 @@ ul {
     box-shadow: 0 0 10px #202020;
     text-shadow: 0 0 7px #404040;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 30em;
 }
 
 #tab {
@@ -53,7 +53,7 @@ ul {
 #logoText {
     line-height: 50%;
     color: white;
-    font-size: 20px;
+    font-size: 20em;
     font-style: italic;
 }
 
