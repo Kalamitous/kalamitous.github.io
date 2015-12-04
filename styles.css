@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+body {
+    overflow: hidden;
+    font-family: Roboto;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #45a1de;
+    box-shadow: 0 0 10px #202020;
+    text-shadow: 0 0 7px #404040;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#tab {
+    float: right;
+    display: inline;
+    width: 300px;
+    background-color: #45a1de;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+#tab a {
+    float: left;
+    display: inline;
+    width: 300px;
+    padding: 48px 0px 48px 0px;
+    background-color: #45a1de;
+    color: #ecf0f1;
+}
+
+#tab a:hover {
+    background-color: #2980b9
+}
+
+#logo {
+    float: left;
+}
+
+#logoText {
+    line-height: 50%;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    z-index: -1;
+}
