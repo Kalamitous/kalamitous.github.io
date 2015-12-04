@@ -126,6 +126,20 @@ ul {
     float: left;
 }
 
+@media (min-width: 1600px) {
+    #logo {
+        float: left;
+        height: 132px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #logo {
+        float: left;
+        height: 128px;
+    }
+}
+
 #logoText {
     line-height: 50%;
     color: white;
