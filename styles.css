@@ -133,6 +133,24 @@ ul {
     font-style: italic;
 }
 
+@media (min-width: 1600px) {
+    #logoText {
+        line-height: 50%;
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 1280px) {
+    #logoText {
+        line-height: 50%;
+        color: white;
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+
 #content {
     position: absolute;
     left: 0px;
