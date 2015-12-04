@@ -137,14 +137,14 @@ ul {
     #logoText {
         line-height: 50%;
         color: white;
-        font-size: 12px;
+        font-size: 20px;
         font-style: italic;
     }
 }
 
 @media (min-width: 1280px) {
     #logoText {
-        line-height: 50%;
+        line-height: 30%;
         color: white;
         font-size: 12px;
         font-style: italic;
