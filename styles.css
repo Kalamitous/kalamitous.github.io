@@ -21,49 +21,35 @@ ul {
     box-shadow: 0 0 10px #202020;
     text-shadow: 0 0 7px #404040;
     text-decoration: none;
-    font-size: 30px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     ul {
-        margin: 0px;
-        padding: 0px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        background-color: #45a1de;
-        box-shadow: 0 0 10px #202020;
-        text-shadow: 0 0 7px #404040;
-        text-decoration: none;
-        font-size: 30px;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 1280px) {
     ul {
-        margin: 0px;
-        padding: 0px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        list-style-type: none;
-        background-color: #45a1de;
-        box-shadow: 0 0 10px #202020;
-        text-shadow: 0 0 7px #404040;
-        text-decoration: none;
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1366px) {
+    ul {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1600px) {
+    ul {
+        font-size: 30px;
     }
 }
 
 #tab {
     float: right;
     display: inline;
-    width: 300px;
     background-color: #45a1de;
     color: #ecf0f1;
     text-align: center;
@@ -72,49 +58,51 @@ ul {
 #tab a {
     float: left;
     display: inline;
-    width: 300px;
-    padding: 48px 0px 48px 0px;
     background-color: #45a1de;
     color: #ecf0f1;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     #tab {
-        float: right;
-        display: inline;
-        width: 300px;
-        background-color: #45a1de;
-        color: #ecf0f1;
-        text-align: center;
+        width: 160px;
     }
-    
+
     #tab a {
-        float: left;
-        display: inline;
-        width: 300px;
-        padding: 48px 0px 48px 0px;
-        background-color: #45a1de;
-        color: #ecf0f1;
+        width: 160px;
+        padding: 30px 0px 30px 0px;
     }
 }
 
 @media (min-width: 1280px) {
     #tab {
-        float: right;
-        display: inline;
         width: 200px;
-        background-color: #45a1de;
-        color: #ecf0f1;
-        text-align: center;
     }
-    
+
     #tab a {
-        float: left;
-        display: inline;
         width: 200px;
         padding: 36px 0px 36px 0px;
-        background-color: #45a1de;
-        color: #ecf0f1;
+    }
+}
+
+@media (min-width: 1366px) {
+    #tab {
+        width: 240px;
+    }
+
+    #tab a {
+        width: 240px;
+        padding: 40px 0px 40px 0px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #tab {
+        width: 300px;
+    }
+
+    #tab a {
+        width: 300px;
+        padding: 48px 0px 48px 0px;
     }
 }
 
@@ -126,42 +114,57 @@ ul {
     float: left;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     #logo {
-        float: left;
-        height: 132px;
+        height: 84px;
     }
 }
 
 @media (min-width: 1280px) {
     #logo {
-        float: left;
         height: 96px;
+    }
+}
+
+@media (min-width: 1366px) {
+    #logo {
+        height: 108px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #logo {
+        height: 132px;
     }
 }
 
 #logoText {
     line-height: 50%;
     color: white;
-    font-size: 20px;
     font-style: italic;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     #logoText {
-        line-height: 50%;
-        color: white;
-        font-size: 20px;
-        font-style: italic;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 1280px) {
     #logoText {
-        line-height: 50%;
-        color: white;
         font-size: 12px;
-        font-style: italic;
+    }
+}
+
+@media (min-width: 1366px) {
+    #logoText {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #logoText {
+        font-size: 20px;
     }
 }
 
