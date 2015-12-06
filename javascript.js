@@ -11,6 +11,8 @@ $(function() {
     });
 
     $.getJSON("http://scriptfodder.com/api/scripts/?api_key=4143b2cbfbc9d500fdb8df2350e2893c6cb54acc", function(script) {
+        $("body").fadeIn(200);
+
         var bannerWidth = ($("#container").outerWidth() - 50 * 4) / 3;
         var iconWidth = ($("#container").outerWidth() - 50 * 5) / 4;
 

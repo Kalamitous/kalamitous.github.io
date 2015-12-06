@@ -3,6 +3,7 @@ body {
     font-weight: 300;
     color: #333333;
     background-color: #45a1de;
+    display: none;
 }
 
 h1 {
