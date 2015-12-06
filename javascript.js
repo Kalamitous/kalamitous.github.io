@@ -3,6 +3,7 @@ $(function() {
         var bannerWidth = ($("#container").outerWidth() - 16 - 54 * 2 - 59 * 2) / 3;
 
         $(".banner").width(bannerWidth);
+        $("button").width(bannerWidth - 32);
     });
 
     $.getJSON("http://scriptfodder.com/api/scripts/?api_key=4143b2cbfbc9d500fdb8df2350e2893c6cb54acc", function(data) {
@@ -30,19 +31,19 @@ $(function() {
 
             var append = ["<td>",
                               "<div>",
-                                  "<table border='1'>",
+                                  "<table class='script'>",
                                       "<tr>",
-                                          "<td colspan='2'><p>" + String(name) + "</p></td>",,
+                                          "<td colspan='2'><p><b>" + String(name) + "</b></p></td>",,
                                       "</tr>",
                                       "<tr>",
                                           "<td colspan='2'><img class='banner' src='https://s3.scriptfodder.com/script_banners/" + banner + ".png' width='" + String(bannerWidth) +"'></td>",
                                       "</tr>",
                                       "<tr>",
                                           "<td><p>Views: " + String(views) + "</p></td>",
-                                          "<td><p>Purchases: W.I.P.</p></td>",
+                                          "<td><p>Purchasers: W.I.P.</p></td>",
                                       "</tr>",
                                       "<tr>",
-                                          "<td colspan='2'><button type='button'>Buy $0.00</button></td>",
+                                          "<td id='buttonCell' colspan='2'><button type='button'>Buy $0.00</button></td>",
                                       "</tr>",
                                   "</table>",
                               "</div>",
@@ -55,5 +56,7 @@ $(function() {
         var $td = $(html);
 
         $("#sf").append($td);
+
+        $("button").width(bannerWidth - 32);
     });
 });
