@@ -1,13 +1,13 @@
 $(function() {
     $(window).resize(function() {
-        var bannerWidth = ($("#container").outerWidth() - 16 - 54 * 2 - 59 * 2) / 3;
+        var bannerWidth = ($("#container").outerWidth() - 16 - 50 * 2 - 50 * 2) / 3;
 
         $(".banner").width(bannerWidth);
         $("button").width(bannerWidth - 32);
     });
 
     $.getJSON("http://scriptfodder.com/api/scripts/?api_key=4143b2cbfbc9d500fdb8df2350e2893c6cb54acc", function(script) {
-        var bannerWidth = ($("#container").outerWidth() - 16 - 54 * 2 - 59 * 2) / 3;
+        var bannerWidth = ($("#container").outerWidth() - 16 - 50 * 2 - 50 * 2) / 3;
 
         var html = "";
         var append = "";
