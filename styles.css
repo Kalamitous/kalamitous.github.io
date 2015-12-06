@@ -37,12 +37,11 @@ button {
 }
 
 button:hover {
-	background-color:#008D4C;
+	background-color: #008D4C;
 }
 
 button:active {
-	position:relative;
-	top:1px;
+    box-shadow: inset 0 0 10px #606060;
 }
 
 #buttonCell {
@@ -92,7 +91,7 @@ button:active {
     background-color: #e1e7e9;
     box-shadow: 0 0 2px #606060;
     border-collapse: collapse;
-    table-layout:fixed;
+    table-layout: fixed;
 }
 
 @media {
