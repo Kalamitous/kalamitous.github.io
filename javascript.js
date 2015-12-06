@@ -1,13 +1,22 @@
 $(function() {
     $(window).resize(function() {
-        var bannerWidth = ($("#container").outerWidth() - 16 - 50 * 2 - 50 * 2) / 3;
+        var bannerWidth = ($("#container").outerWidth() - 50 * 4) / 3;
+        var iconWidth = ($("#container").outerWidth() - 50 * 5) / 4;
 
+        $(".icon").width(iconWidth);
         $(".banner").width(bannerWidth);
-        $("button").width(bannerWidth - 32);
+
+        $(".wsButton").width(iconWidth - 32);
+        $(".sfButton").width(bannerWidth - 32);
     });
 
     $.getJSON("http://scriptfodder.com/api/scripts/?api_key=4143b2cbfbc9d500fdb8df2350e2893c6cb54acc", function(script) {
-        var bannerWidth = ($("#container").outerWidth() - 16 - 50 * 2 - 50 * 2) / 3;
+        var bannerWidth = ($("#container").outerWidth() - 50 * 4) / 3;
+        var iconWidth = ($("#container").outerWidth() - 50 * 5) / 4;
+
+        $(".wsButton").width(iconWidth - 32);
+
+        $(".icon").width(iconWidth);
 
         var html = "";
         var append = "";
@@ -49,23 +58,21 @@ $(function() {
             });
 
             var append = ["<td>",
-                              "<div>",
-                                  "<table class='script'>",
-                                      "<tr>",
-                                          "<td colspan='2'><p><b>" + String(name) + "</b></p></td>",,
-                                      "</tr>",
-                                      "<tr>",
-                                          "<td colspan='2'><img class='banner' src='https://s3.scriptfodder.com/script_banners/" + banner + ".png' width='" + String(bannerWidth) +"'></td>",
-                                      "</tr>",
-                                      "<tr>",
-                                          "<td><p>Views: " + String(views) + "</p></td>",
-                                          "<td><p id='p" + String(id) + "'>Purchases: . . .</p></td>",
-                                      "</tr>",
-                                      "<tr>",
-                                          "<td id='buttonCell' colspan='2'><button id='b" + String(id) + "' type='button'>Buy $. . .</button></td>",
-                                      "</tr>",
-                                  "</table>",
-                              "</div>",
+                              "<table class='script'>",
+                                  "<tr>",
+                                      "<td colspan='2'><p><b>" + String(name) + "</b></p></td>",
+                                  "</tr>",
+                                  "<tr>",
+                                      "<td colspan='2'><img class='banner' src='https://s3.scriptfodder.com/script_banners/" + banner + ".png' width='" + String(bannerWidth) +"'></td>",
+                                  "</tr>",
+                                  "<tr>",
+                                      "<td><p>Views: " + String(views) + "</p></td>",
+                                      "<td><p id='p" + String(id) + "'>Purchases: . . .</p></td>",
+                                  "</tr>",
+                                  "<tr>",
+                                      "<td id='buttonCell' colspan='2'><button class='sfButton' id='b" + String(id) + "' type='button'>Buy $. . .</button></td>",
+                                  "</tr>",
+                              "</table>",
                           "</td>"
             ].join("\n");
 
@@ -77,14 +84,21 @@ $(function() {
         $("#sf").append($td);
 
         $("td").width(bannerWidth / 2);
-        $("button").width(bannerWidth - 32);
+        $(".sfButton").width(bannerWidth - 32);
     });
 
     $(document).on("click", "button", function() {
-        var id = $(this).attr("id");
-        id = id.replace("b", "");
+        if ($(this).attr("class") == "sfButton") {
+            var id = $(this).attr("id");
+            id = id.replace("b", "");
 
-        var win = window.open("https://scriptfodder.com/scripts/view/" + id, "_blank");
-        win.focus();
+            var win = window.open("https://scriptfodder.com/scripts/view/" + id, "_blank");
+            win.focus();
+        } else {
+            var id = $(this).attr("id");
+
+            var win = window.open("http://steamcommunity.com/sharedfiles/filedetails/?id=" + id, "_blank");
+            win.focus();
+        }
     });
 });
