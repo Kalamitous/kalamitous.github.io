@@ -1,31 +1,36 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>Products</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="javascript.js"></script>
 
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        <meta name="author" content="Kalamitous">
+        <meta name="description" content="Kalamitous' Portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
 	<body>
 		<ul>
-            <div style="float:left; width:25%">
-                <li id="logo"><img id="logo" src="logo.png"/></li>
-
-                <p id="logoText">programmer</p>
-                <p id="logoText" style="transform: translateX(-30px)">designer</p>
-                <p id="logoText" style="transform: translateX(-60px)">gamer</p>
+            <div style="float:left; width:10%">
+                <li id="logo"><a href="index.html"><img id="logo" src="logo.png"/></a></li>
             </div>
 
-            <div style="float:right; width:75%">
-                <li id="tab"><a id="contact">Contact</a></li>
-                <li id="tab"><a id="about">About Me</a></li>
-                <li id="tab"><a id="ttt">Tic-Tac-Toe</a></li>
-    			<li id="tab"><a id="products">Products</a></li>
+            <div style="float:right; width:90%">
+                <li id="tab"><a id="contact">CONTACT</a></li>
+                <li id="tab"><a id="about">ABOUT</a></li>
+                <li id="tab"><a id="ttt">TIC-TAC-TOE</a></li>
+    			<li id="tab"><a id="products" href="javascript:void(0);"><b>PRODUCTS</b></a></li>
             </div>
 		</ul>
 
-		<div id="content">
-			<iframe id="iFrame" width="100%" height="100%" frameborder="0"></iframe>
+		<div id="container">
+			<h1>ScriptFodder</h1>
+
+            <table id="sf"></table>
 		</div>
 	</body>
 </html>

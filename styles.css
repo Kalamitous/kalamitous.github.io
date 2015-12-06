@@ -1,178 +1,180 @@
-@font-face {
-    font-family: Roboto;
-    src: url(Roboto-Regular.ttf);
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #333333;
+    background-color: #45a1de;
 }
 
-body {
-    overflow: hidden;
-    font-family: Roboto;
+h1 {
+    font-size: 36px;
 }
 
 ul {
-    margin: 0px;
+    min-width: 600px;
     padding: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     overflow: hidden;
     list-style-type: none;
-    background-color: #45a1de;
-    box-shadow: 0 0 10px #202020;
-    text-shadow: 0 0 7px #404040;
     text-decoration: none;
 }
 
-@media (min-width: 1024px) {
-    ul {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1280px) {
-    ul {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1366px) {
-    ul {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 1600px) {
-    ul {
-        font-size: 30px;
-    }
+td {
+    text-align: center;
 }
 
 #tab {
     float: right;
     display: inline;
-    background-color: #45a1de;
     color: #ecf0f1;
     text-align: center;
 }
 
 #tab a {
-    float: left;
+    float: right;
     display: inline;
-    background-color: #45a1de;
     color: #ecf0f1;
-}
-
-@media (min-width: 1024px) {
-    #tab {
-        width: 160px;
-    }
-
-    #tab a {
-        width: 160px;
-        padding: 30px 0px 30px 0px;
-    }
-}
-
-@media (min-width: 1280px) {
-    #tab {
-        width: 200px;
-    }
-
-    #tab a {
-        width: 200px;
-        padding: 36px 0px 36px 0px;
-    }
-}
-
-@media (min-width: 1366px) {
-    #tab {
-        width: 240px;
-    }
-
-    #tab a {
-        width: 240px;
-        padding: 40px 0px 40px 0px;
-    }
-}
-
-@media (min-width: 1600px) {
-    #tab {
-        width: 300px;
-    }
-
-    #tab a {
-        width: 300px;
-        padding: 48px 0px 48px 0px;
-    }
+    transform: translateY(0px);
+    transition: transform 200ms;
+    text-decoration: none;
 }
 
 #tab a:hover {
-    background-color: #2980b9
+    transform: translateY(-5px);
+    transition: transform 200ms;
 }
 
 #logo {
     float: left;
+    margin-left: 16px;
 }
 
-@media (min-width: 1024px) {
+#container {
+    min-width: 600px;
+    padding: 50px;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 10px #606060;
+}
+
+#sf {
+    transform: translateX(-54px);
+    border-spacing: 50px;
+}
+
+@media {
+    ul {
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    #tab {
+        width: 120px;
+    }
+
+    #tab a {
+        width: 120px;
+        padding: 32px 0px 32px 0px;
+    }
+
     #logo {
-        height: 84px;
+        height: 82px;
+    }
+
+    #container {
+        margin: 50px 0px 50px 0px;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 800px){
+    ul {
+        margin: 50px 100px 0px 100px;
+        font-size: 16px;
+    }
+
+    #tab {
+        width: 120px;
+    }
+
+    #tab a {
+        width: 120px;
+        padding: 32px 0px 32px 0px;
+    }
+
+    #logo {
+        height: 82px;
+    }
+
+    #container {
+        margin: 50px 120px 50px 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    ul {
+        margin: 50px 100px 0px 100px;
+        font-size: 20px;
+    }
+
+    #tab {
+        width: 160px;
+    }
+
+    #tab a {
+        width: 160px;
+        padding: 36px 0px 36px 0px;
+    }
+
     #logo {
         height: 96px;
     }
+
+    #container {
+        margin: 50px 100px 50px 100px;
+    }
 }
 
 @media (min-width: 1366px) {
+    ul {
+        margin: 50px 200px 0px 200px;
+        font-size: 24px;
+    }
+
+    #tab {
+        width: 200px;
+    }
+
+    #tab a {
+        width: 200px;
+        padding: 40px 0px 40px 0px;
+    }
+
     #logo {
         height: 108px;
     }
+
+    #container {
+        margin: 50px 200px 50px 200px;
+    }
 }
 
 @media (min-width: 1600px) {
+    ul {
+        margin: 50px 300px 0px 300px;
+        font-size: 24px;
+    }
+
+    #tab {
+        width: 200px;
+    }
+
+    #tab a {
+        width: 200px;
+        padding: 48px 0px 48px 0px;
+    }
+
     #logo {
         height: 132px;
     }
-}
 
-#logoText {
-    line-height: 50%;
-    color: white;
-    font-style: italic;
-}
-
-@media (min-width: 1024px) {
-    #logoText {
-        font-size: 10px;
+    #container {
+        margin: 50px 300px 50px 300px;
     }
-}
-
-@media (min-width: 1280px) {
-    #logoText {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 1366px) {
-    #logoText {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1600px) {
-    #logoText {
-        font-size: 20px;
-    }
-}
-
-#content {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    z-index: -1;
 }
