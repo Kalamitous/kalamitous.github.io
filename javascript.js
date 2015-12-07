@@ -55,18 +55,18 @@ var addonBanners = [
     "http://images.akamai.steamusercontent.com/ugc/575696389344567478/8A482B1061438F6A2E7108EB9697F9975CE978ED/"
 ];
 
+function optimizeScriptBoxes() {
+    var bannerWidth = ($("#container").outerWidth() - 50 * 4) / 3;
+    var iconWidth = ($("#container").outerWidth() - 50 * 5) / 4;
+
+    $(".icon").width(iconWidth);
+    $(".banner").width(bannerWidth);
+
+    $(".wsButton").width(iconWidth - 32);
+    $(".sfButton").width(bannerWidth - 32);
+}
+
 $(function() {
-    function optimizeScriptBoxes() {
-        var bannerWidth = ($("#container").outerWidth() - 50 * 4) / 3;
-        var iconWidth = ($("#container").outerWidth() - 50 * 5) / 4;
-
-        $(".icon").width(iconWidth);
-        $(".banner").width(bannerWidth);
-
-        $(".wsButton").width(iconWidth - 32);
-        $(".sfButton").width(bannerWidth - 32);
-    }
-
     $(window).resize(function() {
         optimizeScriptBoxes();
     });
@@ -150,6 +150,12 @@ $(function() {
         });
 
         $("#ws").append($(html));
+
+        optimizeScriptBoxes();
+    });
+
+    $("#sf").ready(function() {
+        optimizeScriptBoxes();
     });
 
     $("#ws").ready(function() {
