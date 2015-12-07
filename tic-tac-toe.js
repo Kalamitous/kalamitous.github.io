@@ -123,6 +123,7 @@ function switchTurn(userMove) {
 
         setElementText("userWins", String(userWins));
         setElementText("compWins", String(compWins));
+        setElementText("numTies", String(numTies));
 
         setTimeout(function() { startGame(); }, 2000);
 

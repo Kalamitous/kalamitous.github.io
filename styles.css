@@ -160,6 +160,10 @@ button:active {
     font-size: 18px;
 }
 
+.result {
+    font-size: 24px;
+}
+
 @media {
     ul {
         margin: 0px;
