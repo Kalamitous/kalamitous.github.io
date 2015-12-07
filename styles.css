@@ -1,3 +1,7 @@
+html {
+  overflow-y:scroll;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -20,6 +24,7 @@ ul {
     overflow: hidden;
     list-style-type: none;
     text-decoration: none;
+
 }
 
 td {
@@ -65,6 +70,7 @@ button:active {
 }
 
 #tab {
+    position: relative;
     float: right;
     display: inline;
     color: #ecf0f1;
@@ -72,24 +78,15 @@ button:active {
 }
 
 #tab a {
+    position: relative;
     float: right;
     display: inline;
     color: #ecf0f1;
-    transform: translateY(0px);
-    transition: transform 200ms;
     text-decoration: none;
 }
 
-#tab a:hover {
-    transform: translateY(-5px);
-    transition: transform 200ms;
-}
-
-#activeTab {
-    font-weight: bold;
-}
-
 #container {
+    opacity: 0;
     min-width: 600px;
     padding: 50px;
     background-color: #ecf0f1;
@@ -113,6 +110,10 @@ button:active {
 
 #buttonCell {
     padding-bottom: 10px;
+}
+
+.activeTab {
+    font-weight: bold;
 }
 
 .addonTitle {

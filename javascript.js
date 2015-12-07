@@ -161,4 +161,22 @@ $(function() {
     $("#ws").ready(function() {
         optimizeScriptBoxes();
     });
+
+    $(document).on("mouseenter", "#tab a", function() {
+        if ($(this).attr("class") != "activeTab") {
+            $(this).animate({
+                "top": "-5px"
+            }, 200);
+        }
+    }).on("mouseleave", "#tab a", function() {
+        if ($(this).attr("class") != "activeTab") {
+            $(this).animate({
+                "top": "0px"
+            }, 200);
+        }
+    });
+
+    $("#container").animate({
+        "opacity": "1",
+    }, 200);
 });
