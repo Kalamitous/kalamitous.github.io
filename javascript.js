@@ -150,7 +150,9 @@ $(function() {
         });
 
         $("#ws").append($(html));
+    });
 
+    $("#ws").ready(function() {
         optimizeScriptBoxes();
     });
 });
