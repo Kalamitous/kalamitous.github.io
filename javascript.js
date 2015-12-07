@@ -38,23 +38,21 @@ var addonIDs = [
     "211300890",
     "521401390",
     "533142185",
-    "534857430",
+    "534857430"
 ];
 
 var addonNames = [
     "Human Rocket Launcher",
     "Quick Knife",
-    "DarkRP: DataSave",
-    "Admin Sit Bubble",
-    "Rules Enforcer",
-    "DarkRP: Gamble NPC"
+    "Plunder Ability",
+    "Goomba Stomp"
 ];
 
 var addonBanners = [
     "http://images.akamai.steamusercontent.com/ugc/573439791044613501/8A2E9EF0AA2EBEB5B310C2EB984515C416210C0A/",
     "http://images.akamai.steamusercontent.com/ugc/613969645862389774/0648E00ABA981C1726E5DAB909767C65C49EDC61/",
     "http://images.akamai.steamusercontent.com/ugc/571187356415848420/09CE97E0123F01CBD04626EA05F10403E203A1FC/",
-    "http://images.akamai.steamusercontent.com/ugc/575696389344567478/8A482B1061438F6A2E7108EB9697F9975CE978ED/",
+    "http://images.akamai.steamusercontent.com/ugc/575696389344567478/8A482B1061438F6A2E7108EB9697F9975CE978ED/"
 ];
 
 $(function() {
