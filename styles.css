@@ -49,8 +49,19 @@ button:active {
     box-shadow: inset 0 0 10px #606060;
 }
 
-#buttonCell {
-    padding-bottom: 10px;
+#logoDiv {
+    float: left;
+    width: 10%;
+}
+
+#tabDiv {
+    float: right;
+    width: 90%;
+}
+
+#logo {
+    float: left;
+    margin-left: 16px;
 }
 
 #tab {
@@ -74,9 +85,8 @@ button:active {
     transition: transform 200ms;
 }
 
-#logo {
-    float: left;
-    margin-left: 16px;
+#activeTab {
+    font-weight: bold;
 }
 
 #container {
@@ -101,7 +111,15 @@ button:active {
     left: -50px;
 }
 
-.script {
+#buttonCell {
+    padding-bottom: 10px;
+}
+
+.addonTitle {
+    font-weight: bold;
+}
+
+.addon {
     border-radius: 4px;
     background-color: #e1e7e9;
     box-shadow: 0 0 2px #606060;
@@ -119,6 +137,10 @@ button:active {
         font-size: 16px;
     }
 
+    #logo {
+        height: 82px;
+    }
+
     #tab {
         width: 120px;
     }
@@ -126,10 +148,6 @@ button:active {
     #tab a {
         width: 120px;
         padding: 32px 0px 32px 0px;
-    }
-
-    #logo {
-        height: 82px;
     }
 
     #container {
@@ -143,6 +161,10 @@ button:active {
         font-size: 16px;
     }
 
+    #logo {
+        height: 82px;
+    }
+
     #tab {
         width: 120px;
     }
@@ -150,10 +172,6 @@ button:active {
     #tab a {
         width: 120px;
         padding: 32px 0px 32px 0px;
-    }
-
-    #logo {
-        height: 82px;
     }
 
     #container {
@@ -167,6 +185,10 @@ button:active {
         font-size: 20px;
     }
 
+    #logo {
+        height: 96px;
+    }
+
     #tab {
         width: 160px;
     }
@@ -174,10 +196,6 @@ button:active {
     #tab a {
         width: 160px;
         padding: 36px 0px 36px 0px;
-    }
-
-    #logo {
-        height: 96px;
     }
 
     #container {
@@ -191,6 +209,10 @@ button:active {
         font-size: 24px;
     }
 
+    #logo {
+        height: 108px;
+    }
+
     #tab {
         width: 200px;
     }
@@ -198,10 +220,6 @@ button:active {
     #tab a {
         width: 200px;
         padding: 40px 0px 40px 0px;
-    }
-
-    #logo {
-        height: 108px;
     }
 
     #container {

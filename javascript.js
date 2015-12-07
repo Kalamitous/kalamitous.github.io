@@ -102,9 +102,9 @@ $(function() {
             }
 
             var append = ["<td>",
-                              "<table class='script'>",
+                              "<table class='addon'>",
                                   "<tr>",
-                                      "<td colspan='2'><p><b>" + scriptNames[key] + "</b></p></td>",
+                                      "<td colspan='2'><p class='addonTitle'>" + scriptNames[key] + "</p></td>",
                                   "</tr>",
                                   "<tr>",
                                       "<td colspan='2'><img class='banner' src='" + scriptBanners[key] + "'></td>",
@@ -134,9 +134,9 @@ $(function() {
             }
 
             var append = ["<td>",
-                              "<table class='script'>",
+                              "<table class='addon'>",
                                   "<tr>",
-                                      "<td colspan='2'><p><b>" + addonNames[key] + "</b></p></td>",
+                                      "<td colspan='2'><p>" + addonNames[key] + "</p></td>",
                                   "</tr>",
                                   "<tr>",
                                       "<td colspan='2'><img class='icon' src='" + addonBanners[key] + "'></td>",
