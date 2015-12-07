@@ -154,6 +154,12 @@ $(function() {
         optimizeScriptBoxes();
     });
 
+    $(".activeTab").ready(function() {
+        $(".activeTab").animate({
+            "top": "0px"
+        }, 200);
+    });
+
     $("#sf").ready(function() {
         optimizeScriptBoxes();
     });
@@ -162,13 +168,13 @@ $(function() {
         optimizeScriptBoxes();
     });
 
-    $(document).on("mouseenter", "#tab a", function() {
+    $(document).on("mouseenter", "#tab", function() {
         if ($(this).attr("class") != "activeTab") {
             $(this).animate({
                 "top": "-5px"
             }, 200);
         }
-    }).on("mouseleave", "#tab a", function() {
+    }).on("mouseleave", "#tab", function() {
         if ($(this).attr("class") != "activeTab") {
             $(this).animate({
                 "top": "0px"

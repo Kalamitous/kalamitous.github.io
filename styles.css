@@ -14,6 +14,11 @@ h1 {
     font-size: 36px;
 }
 
+h2 {
+    margin: 0px;
+    font-size: 24px;
+}
+
 p {
     font-size: 18px;
 }
@@ -113,6 +118,8 @@ button:active {
 }
 
 .activeTab {
+    position: relative;
+    top: -5px;
     font-weight: bold;
 }
 
@@ -130,6 +137,27 @@ button:active {
 
 .spacer {
     height: 20px;
+}
+
+#ttt {
+    border-spacing: 10px;
+}
+
+.tile {
+    width: 192px;
+    height: 192px;
+    background-color: white;
+    box-shadow: 0 0 2px #606060;
+    text-align: center;
+    text-shadow: 0 0 10px #404040;
+    font-size: 108px;
+}
+
+.score {
+    text-align: center;
+    table-layout: fixed;
+    width: 606px;
+    font-size: 18px;
 }
 
 @media {

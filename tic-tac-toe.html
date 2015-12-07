@@ -3,8 +3,8 @@
         <title>Tic-Tac-Toe</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdn.rawgit.com/Kalamitous/tic-tac-toe/gh-pages/tic-tac-toe.js"></script>
         <script src="javascript.js"></script>
+        <script src="tic-tac-toe.js"></script>
 
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-	<body>
+	<body onload="startGame();">
 		<ul>
             <div id="logoDiv">
                 <li id="logo"><a href="index.html"><img id="logo" src="logo.png"/></a></li>
@@ -29,7 +29,45 @@
 		</ul>
 
 		<div id="container">
-			<h1>W.I.P.</h1>
+			<center>
+                <h1 id="roundNum">Round . . .</h1>
+
+                <br/>
+                <br/>
+
+                <table id="ttt">
+                    <tr>
+                        <td id="tile1" class="tile" onclick="makeMove(1, 'user');"></td>
+                        <td id="tile2" class="tile" onclick="makeMove(2, 'user');"></td>
+                        <td id="tile3" class="tile" onclick="makeMove(3, 'user');"></td>
+                    </tr>
+                    <tr>
+                        <td id="tile4" class="tile" onclick="makeMove(4, 'user');"></td>
+                        <td id="tile5" class="tile" onclick="makeMove(5, 'user');"></td>
+                        <td id="tile6" class="tile" onclick="makeMove(6, 'user');"></td>
+                    </tr>
+                    <tr>
+                        <td id="tile7" class="tile" onclick="makeMove(7, 'user');"></td>
+                        <td id="tile8" class="tile" onclick="makeMove(8, 'user');"></td>
+                        <td id="tile9" class="tile" onclick="makeMove(9, 'user');"></td>
+                    </tr>
+                <table>
+
+                <br/>
+
+                <table class="score">
+                    <tr>
+                        <td><h2 id="userMove">Player</h2></td>
+                        <td><h2>Ties</h2></td>
+                        <td><h2 id="compMove">Computer</h2></td>
+                    </tr>
+                    <tr>
+                        <td id="userWins">0</td>
+                        <td id="numTies">0</td>
+                        <td id="compWins">0</td>
+                    </tr>
+                </table>
+            </center>
 		</div>
 	</body>
 </html>
