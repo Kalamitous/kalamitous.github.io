@@ -71,6 +71,14 @@ $(function() {
         optimizeScriptBoxes();
     });
 
+    $("#sf").ready(function() {
+        optimizeScriptBoxes();
+    });
+
+    $("#ws").ready(function() {
+        optimizeScriptBoxes();
+    });
+
     $(document).on("click", "button", function() {
         if ($(this).attr("class") == "sfButton") {
             var id = $(this).attr("id");
@@ -151,14 +159,6 @@ $(function() {
 
         $("#ws").append($(html));
 
-        optimizeScriptBoxes();
-    });
-
-    $("#sf").ready(function() {
-        optimizeScriptBoxes();
-    });
-
-    $("#ws").ready(function() {
         optimizeScriptBoxes();
     });
 });

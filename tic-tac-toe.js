@@ -68,13 +68,15 @@ function startGame() {
         compTurn = "O";
     }
 
-    for (var i = 1; i <= 9; i++) {
-        setElementText("tile" + String(i), "");
-        setElementBackgroundColor("tile" + String(i), "white");
-    }
+    $(".tileBack").css("background-color", "white");
+
+    $(".tile").animate({
+        backgroundColor: "white",
+        "opacity": "0",
+    }, 200);
 
     if (compTurn == curTurn) {
-        setTimeout(function() { compMove("none"); }, 500);
+        setTimeout(function() { compMove("none"); }, 700);
     }
 
     setElementText("userMove", "Player(" + userTurn + ")");
@@ -104,6 +106,10 @@ function makeMove(tile, player) {
                 switchTurn(tile);
             }
         }
+
+        $("#tile" + String(tile)).animate({
+            "opacity": "1",
+        }, 200);
     }
 }
 
@@ -138,10 +144,12 @@ function switchTurn(userMove) {
         if (userTurn != curTurn) {
             for (var i = 1; i <= 9; i++) {
                 setElementBackgroundColor("tile" + String(i), "#e1e7e9");
+                $(".tileBack").css("background-color", "#e1e7e9");
             }
         } else {
             for (var i = 1; i <= 9; i++) {
                 setElementBackgroundColor("tile" + String(i), "white");
+                $(".tileBack").css("background-color", "white");
             }
         }
 
@@ -174,15 +182,25 @@ function checkWin() {
     if (win == true) {
         result = getElementText(tile1);
 
-        setElementBackgroundColor(tile1, "#2ecc71");
-        setElementBackgroundColor(tile2, "#2ecc71");
-        setElementBackgroundColor(tile3, "#2ecc71");
+        $("#" + tile1).animate({
+            backgroundColor: "#2ecc71",
+        }, {duration: 200, queue: false});
+
+        $("#" + tile2).animate({
+            backgroundColor: "#2ecc71",
+        }, {duration: 200, queue: false});
+
+        $("#" + tile3).animate({
+            backgroundColor: "#2ecc71",
+        }, {duration: 200, queue: false});
 
         for (var i = 1; i <= 9; i++) {
             if ("tile" + String(i) != tile1 && "tile" + String(i) != tile2 && "tile" + String(i) != tile3) {
                 setElementBackgroundColor("tile" + String(i), "#e1e7e9");
             }
         }
+
+        $(".tileBack").css("background-color", "#e1e7e9");
     }
 
     if (result == false && emptyTiles.length == 0) {
@@ -554,12 +572,19 @@ function userDiagonalPattern(tile) {
 }
 
 function optimizeTTT() {
-    var tileWidth = ($("#container").outerWidth() - 185 * 4) / 3;
+    var tileWidth = ($("#container").outerWidth()) / 7;
 
-    if (tileWidth >= 50) {
-        $(".tile").width(tileWidth);
-        $(".tile").height(tileWidth);
-    }
+    $(".tile").width(tileWidth);
+    $(".tile").height(tileWidth);
+
+    $(".tile").css("font-size", String(tileWidth / 1.5 - 12));
+
+    $(".tileBack").width(tileWidth);
+    $(".tileBack").height(tileWidth);
+
+    var tablePos = $("#ttt").position();
+
+    $("#tttBack").css({"top": String(tablePos.top) + "px", "left": String(tablePos.left) + "px"});
 }
 
 $(function() {

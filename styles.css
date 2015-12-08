@@ -59,6 +59,10 @@ button:active {
     box-shadow: inset 0 0 10px #606060;
 }
 
+span {
+    opacity: 0;
+}
+
 #logoDiv {
     float: left;
     width: 10%;
@@ -139,16 +143,28 @@ button:active {
     height: 20px;
 }
 
-#ttt {
+#tttBack {
     border-spacing: 10px;
+    position: absolute;
+    z-index: 0;
+}
+
+#ttt {
+    position: relative;
+    border-spacing: 10px;
+    z-index: 1;
+}
+
+.tileBack {
+    background-color: white;
+    box-shadow: 0 0 2px #606060;
 }
 
 .tile {
+    opacity: 0;
     background-color: white;
-    box-shadow: 0 0 2px #606060;
     text-align: center;
     text-shadow: 0 0 10px #404040;
-    font-size: 108px;
 }
 
 .score {
