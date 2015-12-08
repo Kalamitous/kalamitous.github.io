@@ -552,3 +552,22 @@ function userDiagonalPattern(tile) {
 
     return diagonalPattern;
 }
+
+function optimizeTTT() {
+    var tileWidth = ($("#container").outerWidth() - 185 * 4) / 3;
+
+    if (tileWidth >= 50) {
+        $(".tile").width(tileWidth);
+        $(".tile").height(tileWidth);
+    }
+}
+
+$(function() {
+    $(window).resize(function() {
+        optimizeTTT();
+    });
+
+    $(".tile").ready(function() {
+        optimizeTTT();
+    });
+});
