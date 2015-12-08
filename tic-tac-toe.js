@@ -73,7 +73,12 @@ function startGame() {
     $(".tile").animate({
         backgroundColor: "white",
         "opacity": "0",
-    }, 200);
+    }, {
+        duration: 200,
+        complete: function() {
+            $(".tile").text("");
+        }
+    });
 
     if (compTurn == curTurn) {
         setTimeout(function() { compMove("none"); }, 700);
@@ -131,7 +136,7 @@ function switchTurn(userMove) {
         setElementText("compWins", String(compWins));
         setElementText("numTies", String(numTies));
 
-        setTimeout(function() { startGame(); }, 2000);
+        setTimeout(function() {startGame();}, 2000);
 
         gameOver = true;
     } else {
@@ -593,7 +598,7 @@ $(function() {
     $(window).load(function() {
         optimizeTTT();
     });
-    
+
     $(window).resize(function() {
         optimizeTTT();
     });
