@@ -67,15 +67,11 @@ function optimizeScriptBoxes() {
 }
 
 $(function() {
+    $(window).load(function() {
+        optimizeScriptBoxes();
+    });
+
     $(window).resize(function() {
-        optimizeScriptBoxes();
-    });
-
-    $("#sf").ready(function() {
-        optimizeScriptBoxes();
-    });
-
-    $("#ws").ready(function() {
         optimizeScriptBoxes();
     });
 

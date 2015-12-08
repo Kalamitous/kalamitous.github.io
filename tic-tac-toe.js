@@ -585,14 +585,16 @@ function optimizeTTT() {
     var tablePos = $("#ttt").position();
 
     $("#tttBack").css({"top": String(tablePos.top) + "px", "left": String(tablePos.left) + "px"});
+
+    $("hr").css({"width": String($(".tile").width() * 3 + 50)});
 }
 
 $(function() {
-    $(window).resize(function() {
+    $(window).load(function() {
         optimizeTTT();
     });
-
-    $(".tile").ready(function() {
+    
+    $(window).resize(function() {
         optimizeTTT();
     });
 });
