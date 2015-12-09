@@ -177,20 +177,6 @@ button:active {
 }
 
 @media (min-width: 1366px) {
-	h1 {
-	    margin: 0px;
-	    font-size: 24px;
-	}
-	
-	h2 {
-	    margin: 0px;
-	    font-size: 18px;
-	}
-	
-	p {
-	    font-size: 12px;
-	}
-	
     ul {
         margin: 50px 200px 0px 200px;
         font-size: 24px;
@@ -210,7 +196,7 @@ button:active {
     }
 
     #container {
-        margin: 50px 200px 50px 200px;
+        margin: 50px 100px 50px 100px;
     }
 }
 
