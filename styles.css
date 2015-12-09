@@ -100,6 +100,7 @@ span {
     padding: 50px;
     background-color: #ecf0f1;
     box-shadow: 0 0 10px #606060;
+    overflow: hidden;
 }
 
 #sf {
@@ -119,6 +120,42 @@ span {
 
 #buttonCell {
     padding-bottom: 10px;
+}
+
+#tttBack {
+    border-spacing: 10px;
+    position: absolute;
+    z-index: 0;
+}
+
+#ttt {
+    position: relative;
+    border-spacing: 10px;
+    z-index: 1;
+}
+
+#gallery {
+    position: relative;
+    box-shadow: 0 0 10px black;
+    z-index: 0;
+}
+
+#galleryImg{
+    position: relative;
+    z-index: 1;
+}
+
+#galleryImgTemp{
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+#desc {
+    position: absolute;
+    color: #ecf0f1;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
 }
 
 .activeTab {
@@ -141,18 +178,6 @@ span {
 
 .spacer {
     height: 20px;
-}
-
-#tttBack {
-    border-spacing: 10px;
-    position: absolute;
-    z-index: 0;
-}
-
-#ttt {
-    position: relative;
-    border-spacing: 10px;
-    z-index: 1;
 }
 
 .tileBack {
