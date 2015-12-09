@@ -592,6 +592,8 @@ function optimizeTTT() {
     $("#tttBack").css({"top": String(tablePos.top) + "px", "left": String(tablePos.left) + "px"});
 
     $("hr").css({"width": String($(".tile").width() * 3 + 50)});
+    
+    $(".score").css("width", String(($(".tile").width() * 3 + 50) / 3));
 }
 
 $(function() {
