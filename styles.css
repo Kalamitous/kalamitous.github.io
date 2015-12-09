@@ -135,6 +135,7 @@ span {
 }
 
 #gallery {
+    float: right;
     position: relative;
     box-shadow: 0 0 10px black;
     z-index: 0;

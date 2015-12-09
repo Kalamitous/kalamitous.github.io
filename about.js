@@ -1,7 +1,13 @@
+var galleryNames = [
+    "Garry's Mod",
+    "L\xD6VE",
+    "osu!"
+];
+
 var galleryImages = [
     "http://i.imgur.com/UXOAdCt.jpg",
     "http://i.imgur.com/4XpHX.png",
-    "https://s3.amazonaws.com/img-pixelapse/79060/8653700/img_5964784.png"
+    "http://i.imgur.com/jGoIwfO.png"
 ];
 
 function optimizeGallery() {
@@ -24,6 +30,18 @@ function optimizeGallery() {
 
     $("#desc p").css("margin-left", String(imgWidth / 40 / 4 + 1));
     $("#desc p").css("margin-top", String(imgWidth / 40 / 4 + 1));
+}
+
+function getImageName(id) {
+    var image;
+
+    for (var i = 0; i < galleryImages.length; i++) {
+        if ($("#" + id).attr("src") == galleryImages[i]) {
+            image = i;
+        }
+    }
+
+    return galleryNames[image];
 }
 
 function nextImage(id) {
@@ -58,7 +76,15 @@ function galleryTransition() {
         complete: function() {
             $("#galleryImg img").attr("src", $("#galleryImgTemp img").attr("src"));
 
+            $("#desc p").fadeOut(200, function() {
+                $("#desc p").text(getImageName("galleryImg img"));
+
+                $("#desc p").fadeIn(500);
+            });
+
             setTimeout(function() {
+                $("#galleryImg img").attr("title", getImageName("galleryImg img"));
+
                 $("#galleryImgTemp img").attr("src", nextImage("galleryImgTemp img"));
                 $("#galleryImgTemp img").css("width", "0px");
 
