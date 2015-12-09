@@ -577,7 +577,7 @@ function userDiagonalPattern(tile) {
 }
 
 function optimizeTTT() {
-    var tileWidth = ($("#container").outerWidth()) / 7;
+    var tileWidth = ($("#container").outerWidth()) / 10;
 
     $(".tile").width(tileWidth);
     $(".tile").height(tileWidth);
