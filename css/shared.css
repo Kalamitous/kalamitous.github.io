@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     color: #333333;
     background-color: #45a1de;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 h1 {
@@ -25,34 +25,33 @@ p {
 
 ul {
     min-width: 600px;
-    padding: 0px;
     overflow: hidden;
     list-style-type: none;
+    padding: 0px;
     text-decoration: none;
-
 }
 
 td {
     padding: 0;
+    padding-top: 10px;
     margin: 0;
     border: 0;
     text-align: center;
-    padding-top: 10px;
 }
 
 button {
     padding: 8px;
-    outline: none;
     border: 0;
     border-radius: 4px;
+    outline: none;
+    box-shadow: 0 0 2px #606060;
     color: #ecf0f1;
     background-color: #00A65A;
-    box-shadow: 0 0 2px #606060;
     font-size: 16px;
 }
 
 button:hover {
-	background-color: #008D4C;
+    background-color: #008D4C;
 }
 
 button:active {
@@ -62,10 +61,10 @@ button:active {
 #container {
     opacity: 0;
     min-width: 600px;
-    padding: 50px;
-    background-color: #ecf0f1;
-    box-shadow: 0 0 10px #606060;
     overflow: hidden;
+    padding: 50px;
+    box-shadow: 0 0 10px #606060;
+    background-color: #ecf0f1;
 }
 
 #logoDiv {
@@ -84,17 +83,17 @@ button:active {
 }
 
 #tab {
+    display: inline;
     position: relative;
     float: right;
-    display: inline;
     color: #ecf0f1;
     text-align: center;
 }
 
 #tab a {
+    display: inline;
     position: relative;
     float: right;
-    display: inline;
     color: #ecf0f1;
     text-decoration: none;
 }
@@ -178,6 +177,20 @@ button:active {
 }
 
 @media (min-width: 1366px) {
+	h1 {
+	    margin: 0px;
+	    font-size: 24px;
+	}
+	
+	h2 {
+	    margin: 0px;
+	    font-size: 18px;
+	}
+	
+	p {
+	    font-size: 12px;
+	}
+	
     ul {
         margin: 50px 200px 0px 200px;
         font-size: 24px;
@@ -202,6 +215,20 @@ button:active {
 }
 
 @media (min-width: 1600px) {
+    h1 {
+	    margin: 0px;
+	    font-size: 36px;
+	}
+	
+	h2 {
+	    margin: 0px;
+	    font-size: 24px;
+	}
+	
+	p {
+	    font-size: 18px;
+	}
+	
     ul {
         margin: 50px 300px 0px 300px;
         font-size: 24px;
