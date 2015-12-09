@@ -104,10 +104,28 @@ button:active {
 }
 
 @media {
+    h1 {
+	    margin: 0px;
+	    font-size: 24px;
+	}
+	
+	h2 {
+	    margin: 0px;
+	    font-size: 16px;
+	}
+	
+	p {
+	    font-size: 12px;
+	}
+    
     ul {
-        margin: 0px;
+        margin: 50px 0px 0px 0px;
         font-size: 16px;
     }
+    
+    button {
+	    font-size: 16px;
+	}
 
     #logo {
         height: 82px;
@@ -127,30 +145,6 @@ button:active {
     }
 }
 
-@media (min-width: 800px){
-    ul {
-        margin: 50px 100px 0px 100px;
-        font-size: 16px;
-    }
-
-    #logo {
-        height: 82px;
-    }
-
-    #tab {
-        width: 120px;
-    }
-
-    #tab a {
-        width: 120px;
-        padding: 32px 0px 32px 0px;
-    }
-
-    #container {
-        margin: 50px 120px 50px 120px;
-    }
-}
-
 @media (min-width: 1024px) {
 	h1 {
 	    margin: 0px;
@@ -167,7 +161,6 @@ button:active {
 	}
 	
     ul {
-      
         margin: 50px 100px 0px 100px;
         font-size: 20px;
     }
@@ -252,7 +245,7 @@ button:active {
 	}
 	
     ul {
-        margin: 50px 300px 0px 300px;
+        margin: 50px 300px 50px 300px;
         font-size: 24px;
     }
     
