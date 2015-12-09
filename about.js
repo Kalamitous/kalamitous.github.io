@@ -2,7 +2,7 @@ var galleryImages = [
     "http://i.imgur.com/UXOAdCt.jpg",
     "http://i.imgur.com/4XpHX.png",
     "https://s3.amazonaws.com/img-pixelapse/79060/8653700/img_5964784.png"
-]
+];
 
 function optimizeGallery() {
     var imgWidth = ($("#container").outerWidth() - 50 * 4) / 2;
@@ -12,7 +12,7 @@ function optimizeGallery() {
     $("#galleryImg img").width(imgWidth);
     $("#galleryImgTemp").css({"left": String(imgWidth) + "px", "width": "0px"});
 
-    $("#galleryImgTemp img").attr("width", "0px")
+    $("#galleryImgTemp img").attr("width", "0px");
 
     var imgPos = $("#gallery").position();
 
@@ -46,12 +46,12 @@ function nextImage(id) {
 
 function galleryTransition() {
     $("#galleryImgTemp img").animate({
-        width: $("#gallery").width(),
+        width: $("#gallery").width()
     }, {duration: 0, queue: false});
 
     $("#galleryImgTemp").animate({
         left: 0,
-        width: $("#gallery").width(),
+        width: $("#gallery").width()
     }, {
         duration: 500,
         queue: false,
@@ -73,11 +73,11 @@ function galleryTransition() {
 $(function() {
     $(window).load(function() {
         optimizeGallery();
-    });
 
-    setInterval(function() {
-        galleryTransition();
-    }, 4000);
+        setInterval(function() {
+            galleryTransition();
+        }, 4000);
+    });
 
     $(window).resize(function() {
         optimizeGallery();
