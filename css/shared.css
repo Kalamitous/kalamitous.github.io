@@ -152,10 +152,29 @@ button:active {
 }
 
 @media (min-width: 1024px) {
+	h1 {
+	    margin: 0px;
+	    font-size: 24px;
+	}
+	
+	h2 {
+	    margin: 0px;
+	    font-size: 20px;
+	}
+	
+	p {
+	    font-size: 12px;
+	}
+	
     ul {
+      
         margin: 50px 100px 0px 100px;
         font-size: 20px;
     }
+    
+    button {
+	    font-size: 16px;
+	}
 
     #logo {
         height: 96px;
@@ -178,12 +197,12 @@ button:active {
 @media (min-width: 1366px) {
 	h1 {
 	    margin: 0px;
-	    font-size: 36px;
+	    font-size: 30px;
 	}
 	
 	h2 {
 	    margin: 0px;
-	    font-size: 24px;
+	    font-size: 20px;
 	}
 	
 	p {
