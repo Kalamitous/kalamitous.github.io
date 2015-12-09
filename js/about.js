@@ -5,13 +5,13 @@ var galleryNames = [
 ];
 
 var galleryImages = [
-    "http://i.imgur.com/UXOAdCt.jpg",
-    "http://i.imgur.com/4XpHX.png",
-    "http://i.imgur.com/jGoIwfO.png"
+    "./images/about/gmod.png",
+    "./images/about/love2d.png",
+    "./images/about/osu.png"
 ];
 
 function optimizeGallery() {
-    var imgWidth = ($("#container").outerWidth() - 50 * 4) / 2;
+    var imgWidth = $("#container").outerWidth();
 
     $("#gallery").width(imgWidth);
     $("#galleryImg").width(imgWidth);
@@ -24,12 +24,15 @@ function optimizeGallery() {
 
     $("#desc").css({"top": String(imgPos.top) + "px", "left": String(imgPos.left) + "px"});
     $("#desc").width(imgWidth);
+    $("#desc").height(imgWidth / 30);
 
-    $("#desc").height(imgWidth / 20);
-    $("#desc p").css("font-size", String(imgWidth / 40));
+    $("#bar").css({"top": String(imgPos.top + $("#gallery").height() - (imgWidth / 200)) + "px", "left": String(imgPos.left) + "px"});
+    $("#bar").height(imgWidth / 200);
 
-    $("#desc p").css("margin-left", String(imgWidth / 40 / 4 + 1));
-    $("#desc p").css("margin-top", String(imgWidth / 40 / 4 + 1));
+    $("#desc p").css("font-size", String(imgWidth / 60));
+
+    $("#desc p").css("margin-left", String((imgWidth / 60 / 4 + 1) * 2));
+    $("#desc p").css("margin-top", String(imgWidth / 60 / 4 + 1));
 }
 
 function getImageName(id) {
@@ -67,6 +70,18 @@ function galleryTransition() {
         width: $("#gallery").width()
     }, {duration: 0, queue: false});
 
+    $("#bar").animate({
+        width: 0
+    }, {
+        duration: 500,
+        queue: false,
+        complete: function() {
+            $("#bar").animate({
+                width: $("#gallery").width()
+            }, 4500);
+        }
+    });
+
     $("#galleryImgTemp").animate({
         left: 0,
         width: $("#gallery").width()
@@ -88,7 +103,7 @@ function galleryTransition() {
                 $("#galleryImgTemp img").attr("src", nextImage("galleryImgTemp img"));
                 $("#galleryImgTemp img").css("width", "0px");
 
-                var imgWidth = ($("#container").outerWidth() - 50 * 4) / 2;
+                var imgWidth = $("#container").outerWidth();
 
                 $("#galleryImgTemp").css({"left": String(imgWidth) + "px", "width": "0px"});
             }, 50);
@@ -100,9 +115,13 @@ $(function() {
     $(window).load(function() {
         optimizeGallery();
 
+        $("#bar").animate({
+            width: $("#gallery").width()
+        }, {duration: 5000, queue: false});
+
         setInterval(function() {
             galleryTransition();
-        }, 4000);
+        }, 5000);
     });
 
     $(window).resize(function() {

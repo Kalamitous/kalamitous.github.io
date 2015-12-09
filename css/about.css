@@ -1,8 +1,9 @@
 #gallery {
-    float: right;
     position: relative;
-    box-shadow: 0 0 10px black;
     z-index: 0;
+    top: -50px;
+    left: -50px;
+    box-shadow: 0 0 10px #606060;
 }
 
 #galleryImg{
@@ -11,14 +12,22 @@
 }
 
 #galleryImgTemp{
-    top: 0px;
     position: absolute;
     z-index: 2;
+    top: 0px;
 }
 
 #desc {
     position: absolute;
+    z-index: 3;
     color: #ecf0f1;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+#bar {
+    width: 0px;
+    position: absolute;
     z-index: 3;
+    float: left;
+    background-color: #2980b9;
 }
