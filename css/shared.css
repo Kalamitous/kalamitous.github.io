@@ -47,7 +47,6 @@ button {
     box-shadow: 0 0 2px #606060;
     color: #ecf0f1;
     background-color: #00A65A;
-    font-size: 16px;
 }
 
 button:hover {
@@ -177,10 +176,28 @@ button:active {
 }
 
 @media (min-width: 1366px) {
+	h1 {
+	    margin: 0px;
+	    font-size: 36px;
+	}
+	
+	h2 {
+	    margin: 0px;
+	    font-size: 24px;
+	}
+	
+	p {
+	    font-size: 14px;
+	}
+ 
     ul {
-        margin: 50px 200px 0px 200px;
+        margin: 50px 150px 0px 150px;
         font-size: 24px;
     }
+    
+    button {
+	    font-size: 16px;
+	}
 
     #logo {
         height: 108px;
@@ -219,6 +236,10 @@ button:active {
         margin: 50px 300px 0px 300px;
         font-size: 24px;
     }
+    
+    button {
+	    font-size: 16px;
+	}
 
     #tab {
         width: 200px;
