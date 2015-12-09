@@ -593,7 +593,7 @@ function optimizeTTT() {
 
     $("hr").css({"width": String($(".tile").width() * 3 + 50)});
     
-    $(".score").css("width", String(($(".tile").width() * 3 + 50) / 3));
+    $(".score").css("width", String($(".tile").width() * 3 + 50);
 }
 
 $(function() {
