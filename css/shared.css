@@ -59,8 +59,13 @@ button:active {
     box-shadow: inset 0 0 10px #606060;
 }
 
-span {
+#container {
     opacity: 0;
+    min-width: 600px;
+    padding: 50px;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 10px #606060;
+    overflow: hidden;
 }
 
 #logoDiv {
@@ -94,114 +99,10 @@ span {
     text-decoration: none;
 }
 
-#container {
-    opacity: 0;
-    min-width: 600px;
-    padding: 50px;
-    background-color: #ecf0f1;
-    box-shadow: 0 0 10px #606060;
-    overflow: hidden;
-}
-
-#sf {
-    padding-bottom: 50px;
-    border-spacing: 50px 0px;
-    text-align: center;
-    position: relative;
-    left: -50px;
-}
-
-#ws {
-    border-spacing: 50px 0px;
-    text-align: center;
-    position: relative;
-    left: -50px;
-}
-
-#buttonCell {
-    padding-bottom: 10px;
-}
-
-#tttBack {
-    border-spacing: 10px;
-    position: absolute;
-    z-index: 0;
-}
-
-#ttt {
-    position: relative;
-    border-spacing: 10px;
-    z-index: 1;
-}
-
-#gallery {
-    float: right;
-    position: relative;
-    box-shadow: 0 0 10px black;
-    z-index: 0;
-}
-
-#galleryImg{
-    position: relative;
-    z-index: 1;
-}
-
-#galleryImgTemp{
-    top: 0px;
-    position: absolute;
-    z-index: 2;
-}
-
-#desc {
-    position: absolute;
-    color: #ecf0f1;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 3;
-}
-
 .activeTab {
     position: relative;
     top: -5px;
     font-weight: bold;
-}
-
-.addonTitle {
-    font-weight: bold;
-}
-
-.addon {
-    border-radius: 4px;
-    background-color: #e1e7e9;
-    box-shadow: 0 0 2px #606060;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.spacer {
-    height: 20px;
-}
-
-.tileBack {
-    background-color: white;
-    box-shadow: 0 0 2px #606060;
-}
-
-.tile {
-    opacity: 0;
-    background-color: white;
-    text-align: center;
-    text-shadow: 0 0 10px #404040;
-}
-
-.score {
-    text-align: center;
-    table-layout: fixed;
-    width: 606px;
-    font-size: 18px;
-}
-
-.result {
-    font-size: 24px;
 }
 
 @media {

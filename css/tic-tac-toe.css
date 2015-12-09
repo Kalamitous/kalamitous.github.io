@@ -1,0 +1,34 @@
+#tttBack {
+    border-spacing: 10px;
+    position: absolute;
+    z-index: 0;
+}
+
+#ttt {
+    position: relative;
+    border-spacing: 10px;
+    z-index: 1;
+}
+
+.tileBack {
+    background-color: white;
+    box-shadow: 0 0 2px #606060;
+}
+
+.tile {
+    opacity: 0;
+    background-color: white;
+    text-align: center;
+    text-shadow: 0 0 10px #404040;
+}
+
+.score {
+    text-align: center;
+    table-layout: fixed;
+    width: 606px;
+    font-size: 18px;
+}
+
+.result {
+    font-size: 24px;
+}
