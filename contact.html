@@ -5,10 +5,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
         <script src="js/shared.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/contact.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/shared.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -26,25 +26,20 @@
             </div>
 
             <div id="tabDiv">
-                <li id="tab"><a href="contact.html">CONTACT</a></li>
+                <li id="tab" class="activeTab"><a href="javascript:void(0);">CONTACT</a></li>
                 <li id="tab"><a href="about.html">ABOUT</a></li>
                 <li id="tab"><a href="tic-tac-toe.html">TIC-TAC-TOE</a></li>
-    			<li id="tab" class="activeTab"><a href="javascript:void(0);">PRODUCTS</a></li>
+    			<li id="tab"><a href="index.html">PRODUCTS</a></li>
             </div>
 		</ul>
 
 		<div id="container">
-			<h1>ScriptFodder</h1>
+            <p>Feel free to contact me if you have suggestions, ideas, problems, or anything else. A response will be sent via email.</p>
 
-            <p>ScriptFodder is a marketplace for Garry's Mod addons where I sell my scripts for server owners and players to enjoy.</p>
+            <input type="text" name="name" id="name"/>
+            <input type="text" name="email" id="email"/>
 
-            <table id="sf"></table>
-
-            <h1>Steam Workshop</h1>
-
-            <p>The Steam Workshop is a place where you can download new content and modifications for your favorite Steam games. Here, I create free Garry's Mod addons for players to use.</p>
-
-            <table id="ws"></table>
+            <button id="submit">Send</button>
 		</div>
 	</body>
 </html>
