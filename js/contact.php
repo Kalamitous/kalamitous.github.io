@@ -1,11 +1,10 @@
-header('content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
-
 <?php
+header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']);
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-
-mail($email, $name, "Test.");
-
+ $to = "xkalamitous@gmail.com";
+ $subject = "http://kalamitous.github.io/"
+ $email = $_REQUEST['email'];
+ $message = $_REQUEST['message'];
+ $headers = "From: $email";
+ $sent = mail($to, $subject, $message, $headers);
 ?>

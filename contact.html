@@ -36,6 +36,12 @@
 		<div id="container">
             <p>Feel free to contact me if you have suggestions, ideas, problems, or anything else. A response will be sent via email.</p>
 
+            <?php
+             $to = "xkalamitous@gmail.com";
+             $subject = "http://kalamitous.github.io/"
+             $email = $_REQUEST['email'];
+             $message = $_REQUEST['message'];
+            ?>
             <input type="text" name="name" id="name"/>
             <input type="text" name="email" id="email"/>
 
