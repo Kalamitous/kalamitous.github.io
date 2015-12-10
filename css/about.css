@@ -28,6 +28,7 @@
 
 
 #desc {
+    width: 0px;
     position: absolute;
     z-index: 3;
     color: #ecf0f1;
