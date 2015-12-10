@@ -31,3 +31,18 @@
     float: left;
     background-color: #2980b9;
 }
+
+#selector {
+    position: relative;
+    top: -25px;
+    border-spacing: 25px 0px;
+}
+
+#sb0 {
+    background-color: #45a1de;
+}
+
+.selectorBox {
+    box-shadow: 0 0 2px #606060;
+    background-color: #e1e7e9;
+}
