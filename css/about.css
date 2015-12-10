@@ -8,6 +8,7 @@
 }
 
 #galleryImg{
+    width: 0px;
     position: relative;
     z-index: 1;
 }
