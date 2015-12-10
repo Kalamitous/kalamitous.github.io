@@ -12,11 +12,20 @@
     z-index: 1;
 }
 
+#galleryImg img{
+    width: 0px;
+}
+
 #galleryImgTemp{
     position: absolute;
     z-index: 2;
     top: 0px;
 }
+
+#galleryImgTemp img{
+    width: 0px;
+}
+
 
 #desc {
     position: absolute;
