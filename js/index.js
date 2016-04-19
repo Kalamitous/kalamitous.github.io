@@ -17,12 +17,12 @@ var scriptNames = [
 ];
 
 var scriptBanners = [
-    "https://s3.scriptfodder.com/script_banners/9a5cb27a068dfa015c01a790e9650ab6.png",
-    "https://s3.scriptfodder.com/script_banners/3c4cac8c733f09511d8fbfecbf847f0e.png",
-    "https://s3.scriptfodder.com/script_banners/04e91aeb65c450cacd589fa9c6098b75.png",
-    "https://s3.scriptfodder.com/script_banners/72c7b4b5d77d0a6c21585b5a5187e95a.png",
-    "https://s3.scriptfodder.com/script_banners/cea3f7b2731fbfc86935ef3b4c2444b7.png",
-    "https://s3.scriptfodder.com/script_banners/a4a775cd5bd7a9d00bcff3414b478b77.png"
+    "https://s3.scriptfodder.com/script_banners/78c84a636b257a1d9bd54430e6f95af2.png",
+    "https://s3.scriptfodder.com/script_banners/4b0713475df444e27d44640c4b7446d1.png",
+    "https://s3.scriptfodder.com/script_banners/d6cc135121d8dcdf5a7cb119e529b142.png",
+    "https://s3.scriptfodder.com/script_banners/343024bdd2b3261795b45cda9917a293.png",
+    "https://s3.scriptfodder.com/script_banners/ea4b381c6eef3b13e7fea2aace2c68e6.png",
+    "https://s3.scriptfodder.com/script_banners/c34c01537188fe844c879cfa47ce1139.png"
 ];
 
 var scriptPrices = [
