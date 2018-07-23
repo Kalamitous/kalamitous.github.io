@@ -17,12 +17,12 @@ var scriptNames = [
 ];
 
 var scriptBanners = [
-    "https://s3.scriptfodder.com/script_banners/78c84a636b257a1d9bd54430e6f95af2.png",
-    "https://s3.scriptfodder.com/script_banners/4b0713475df444e27d44640c4b7446d1.png",
-    "https://s3.scriptfodder.com/script_banners/d6cc135121d8dcdf5a7cb119e529b142.png",
-    "https://s3.scriptfodder.com/script_banners/343024bdd2b3261795b45cda9917a293.png",
-    "https://s3.scriptfodder.com/script_banners/ea4b381c6eef3b13e7fea2aace2c68e6.png",
-    "https://s3.scriptfodder.com/script_banners/c34c01537188fe844c879cfa47ce1139.png"
+    "https://media.gmodstore.com/script_banners/78c84a636b257a1d9bd54430e6f95af2_full.png",
+    "https://media.gmodstore.com/script_banners/4b0713475df444e27d44640c4b7446d1_full.png",
+    "https://media.gmodstore.com/script_banners/d6cc135121d8dcdf5a7cb119e529b142_full.png",
+    "https://media.gmodstore.com/script_banners/343024bdd2b3261795b45cda9917a293_full.png",
+    "https://media.gmodstore.com/script_banners/ea4b381c6eef3b13e7fea2aace2c68e6_full.png",
+    "https://media.gmodstore.com/script_banners/c34c01537188fe844c879cfa47ce1139_full.png"
 ];
 
 var scriptPrices = [
