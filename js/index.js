@@ -138,7 +138,7 @@ $(function() {
             var append = ["<td>",
                               "<table class='addon'>",
                                   "<tr>",
-                                      "<td colspan='2'><p>" + addonNames[key] + "</p></td>",
+                                      "<td colspan='2'><p class='addonTitle'>" + addonNames[key] + "</p></td>",
                                   "</tr>",
                                   "<tr>",
                                       "<td colspan='2'><img class='icon' src='" + addonBanners[key] + "'></td>",

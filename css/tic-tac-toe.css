@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+.next-button {
+    position: absolute;
+}
+
 @media {
     .result {
         font-size: 14px;

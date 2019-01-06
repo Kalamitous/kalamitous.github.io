@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-top: -4px;
+    text-align: center;
+}
+
+.featured {
+    background-color: #efda80;
+}
+
+.project-text {
+    margin: auto;
+    white-space: pre-line;
+}
+
+.next-button {
+    position: relative;
+    left: calc(50% - 25px);
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.note {
+    margin-top: calc(16px - 4%);
+    padding-bottom: 4%;
+    font-style: italic;
+}

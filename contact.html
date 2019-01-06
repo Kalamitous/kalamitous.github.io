@@ -5,8 +5,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
         <script src="js/shared.js"></script>
+        <script src="js/contact.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/shared.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
 
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -26,19 +28,28 @@
             <div id="tabDiv">
                 <li id="tab" class="activeTab"><a href="javascript:void(0);">CONTACT</a></li>
                 <li id="tab"><a href="about.html">ABOUT</a></li>
-                <li id="tab"><a href="tic-tac-toe.html">TIC-TAC-TOE</a></li>
-    			<li id="tab"><a href="index.html">PRODUCTS</a></li>
+                <li id="tab"><a href="projects.html">PROJECTS</a></li>
+                <li id="tab"><a href="index.html">PRODUCTS</a></li>
             </div>
 		</ul>
 
 		<div id="container">
-            <p>Feel free to contact me via email if you have suggestions, ideas, problems, or anything else.</p>
+            <form name="gForm" id="gForm" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScjL3nQcoP8AZSwiRTvYXsd4cSFraBIN5o1bUqZ0_pgY-fz3w/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <p>Feel free to contact me if you have ideas, problems, or anything else.</p>
 
+                <div id="nameContainer">
+                    <input type="text" name="entry.1648101669" id="name" placeholder="Name"><br>
+                </div>
+                <div id="emailContainer">
+                    <input type="text" name="entry.1725600325" id="email" placeholder="Email">
+                </div>
+                <textarea type="text" name="entry.1717997398" id="message" placeholder="Message"></textarea>
+                <input id="submit" type="submit"></button>
+              </form>
+              
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-            <p><b>Email: </b>
-                <a href="mailto:xkalamitous@gmail.com?" target="_blank">
-                    <i><u>xkalamitous@gmail.com<u></i>
-                </a>
-            </p>
-	</body>
+              <h1 id="thank">Thank you for your message!<br>I will get back to you shortly.</h1>
+        </div>
+    </body>
 </html>

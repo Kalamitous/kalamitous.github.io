@@ -17,8 +17,21 @@ h2 {
     margin: 0px;
 }
 
+p {
+    font-weight: 400;
+}
+
+i {
+    position: relative;
+    right: 3px;
+    border: solid #ecf0f1;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+}
+
 ul {
-    min-width: 600px;
+    min-width: 700px;
     overflow: hidden;
     list-style-type: none;
     padding: 0px;
@@ -72,13 +85,13 @@ button:active {
 
 #logo {
     float: left;
-    margin-left: 16px;
 }
 
 #tab {
     display: inline;
     position: relative;
     float: right;
+    width: auto;
     color: #ecf0f1;
     text-align: center;
 }
@@ -86,20 +99,41 @@ button:active {
 #tab a {
     display: inline;
     position: relative;
+    width: auto;
     float: right;
     color: #ecf0f1;
     text-decoration: none;
 }
 
 .activeTab {
-    position: relative;
-    top: -5px;
-    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+}
+
+.next-button {
+    margin-right: 4%;
+    margin-bottom: 4%;
+    align-self: flex-end;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #45a1de;
+}
+
+.next-button:hover {
+    background-color: #2980b9;
+}
+
+.left {
+    left: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
 }
 
 @media {
     h1 {
-	    font-size: 24px;
+	    font-size: 20px;
 	}
 
 	h2 {
@@ -107,7 +141,7 @@ button:active {
 	}
 
 	p {
-	    font-size: 12px;
+	    font-size: 14px;
 	}
 
     ul {
@@ -124,11 +158,10 @@ button:active {
     }
 
     #tab {
-        width: 120px;
+        margin-left: 64px;
     }
 
     #tab a {
-        width: 120px;
         padding: 32px 0px 32px 0px;
     }
 
@@ -143,11 +176,11 @@ button:active {
 	}
 
 	h2 {
-	    font-size: 20px;
+	    font-size: 18px;
 	}
 
 	p {
-	    font-size: 14px;
+	    font-size: 16px;
 	}
 
     ul {
@@ -163,12 +196,7 @@ button:active {
         height: 96px;
     }
 
-    #tab {
-        width: 160px;
-    }
-
     #tab a {
-        width: 160px;
         padding: 36px 0px 36px 0px;
     }
 
@@ -179,47 +207,7 @@ button:active {
 
 @media (min-width: 1366px) {
 	h1 {
-	    font-size: 30px;
-	}
-
-	h2 {
-	    font-size: 20px;
-	}
-
-	p {
-	    font-size: 14px;
-	}
-
-    ul {
-        margin: 50px 150px 0px 150px;
-        font-size: 24px;
-    }
-
-    button {
-	    font-size: 16px;
-	}
-
-    #logo {
-        height: 108px;
-    }
-
-    #tab {
-        width: 200px;
-    }
-
-    #tab a {
-        width: 200px;
-        padding: 40px 0px 40px 0px;
-    }
-
-    #container {
-        margin: 50px 150px 50px 150px;
-    }
-}
-
-@media (min-width: 1600px) {
-    h1 {
-	    font-size: 36px;
+	    font-size: 32px;
 	}
 
 	h2 {
@@ -231,7 +219,7 @@ button:active {
 	}
 
     ul {
-        margin: 50px 300px 50px 300px;
+        margin: 50px 200px 0px 200px;
         font-size: 24px;
     }
 
@@ -239,12 +227,29 @@ button:active {
 	    font-size: 16px;
 	}
 
-    #tab {
-        width: 200px;
+    #logo {
+        height: 108px;
     }
 
     #tab a {
-        width: 200px;
+        padding: 40px 0px 40px 0px;
+    }
+
+    #container {
+        margin: 50px 200px 50px 200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    h1 {
+	    font-size: 36px;
+	}
+    
+    ul {
+        margin: 50px 300px 50px 300px;
+    }
+
+    #tab a {
         padding: 48px 0px 48px 0px;
     }
 

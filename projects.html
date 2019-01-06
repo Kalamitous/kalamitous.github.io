@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Contact</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="js/shared.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/shared.css">
+        <link rel="stylesheet" type="text/css" href="css/projects.css">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+
+        <meta name="author" content="Kalamitous">
+        <meta name="description" content="Kalamitous' Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+	<body>
+		<ul>
+            <div id="logoDiv">
+                <li id="logo"><a href="index.html"><img id="logo" src="images/logo.png"/></a></li>
+            </div>
+
+            <div id="tabDiv">
+                <li id="tab"><a href="contact.html">CONTACT</a></li>
+                <li id="tab"><a href="about.html">ABOUT</a></li>
+                <li id="tab" class="activeTab"><a href="javascript:void(0);">PROJECTS</a></li>
+    			<li id="tab"><a href="index.html">PRODUCTS</a></li>
+            </div>
+		</ul>
+
+		<div id="container">
+            <div class="project">
+                <img class="project-image" src="images/projects/essence.png"/>
+
+                <div class="project-text">
+                    <h1>essence</h1>
+                    <p>A web application that generates dynamic landscapes from music in real-time.</p>
+                </div>
+
+                <button class="next-button" onclick="window.open('https://kalamitous.github.io/essence/', '_blank');">
+                    <i class="right"></i>
+                </button>
+            </div>
+
+            <div class="project">
+                <img class="project-image" src="images/projects/blob_blitz.png"/>
+
+                <div class="project-text">
+                    <h1>Blob Blitz</h1>
+                    <p>A game made for LÖVE Jam 2018 over the course of three days.</p>
+                </div>
+
+                <button class="next-button" onclick="window.open('https://kalamitous.itch.io/blob-blitz', '_blank');">
+                    <i class="right"></i>
+                </button>
+            </div>
+
+            <div class="project">
+                <img class="project-image" src="images/projects/storyboards.png"/>
+
+                <div class="project-text">
+                    <h1>osu! Storyboards</h1>
+                    <p>I program background visuals for songs in this rhythm game.</p>
+                </div>
+
+                <button class="next-button" onclick="window.location.replace('storyboards.html');">
+                    <i class="right"></i>
+                </button>
+            </div>
+
+            <div class="project">
+                <img class="project-image" src="images/projects/tic-tac-toe.png"/>
+
+                <div class="project-text">
+                    <h1>Tic-Tac-Toe Bot</h1>
+                    <p>You can't beat it.</p>
+                </div>
+
+                <button class="next-button" onclick="window.location.replace('tic-tac-toe.html');">
+                    <i class="right"></i>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

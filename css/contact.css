@@ -1,0 +1,67 @@
+input {
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+}
+
+#nameContainer {
+    margin-right: 8px;
+    width: calc(50% - 8px);
+    float: left;
+}
+
+#name {
+    width: 100%;
+}
+
+#emailContainer {
+    margin-left: 8px;
+    width: calc(50% - 8px);
+    float: right;
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 200px;
+}
+
+#submit {
+    margin-top: 16px;
+    border: 0;
+    outline: none;
+    color: #ecf0f1;
+    background-color: #e74c3c;
+}
+
+#submit:hover {
+    background-color: #c0392b;
+}
+
+#submit:active {
+    box-shadow: inset 0 0 10px #606060;
+}
+
+#thank {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 300;
+    opacity: 0;
+}
