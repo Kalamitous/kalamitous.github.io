@@ -112,7 +112,7 @@ $(function() {
                                       "<td colspan='2'><img class='banner' src='" + scriptBanners[key] + "'></td>",
                                   "</tr>",
                                   "<tr>",
-                                      "<td id='buttonCell' colspan='2'><button class='sfButton' id='b" + val + "' type='button'>Buy " + scriptPrices[key] + "</button></td>",
+                                      "<td id='buttonCell' colspan='2'><button class='dl-button sfButton' id='b" + val + "' type='button'>Buy " + scriptPrices[key] + "</button></td>",
                                   "</tr>",
                               "</table>",
                           "</td>"
@@ -144,7 +144,7 @@ $(function() {
                                       "<td colspan='2'><img class='icon' src='" + addonBanners[key] + "'></td>",
                                   "</tr>",
                                   "<tr>",
-                                      "<td id='buttonCell' colspan='2'><button class='wsButton' id='" + val + "' type='button'>Download</button></td>",
+                                      "<td id='buttonCell' colspan='2'><button class='dl-button wsButton' id='" + val + "' type='button'>Download</button></td>",
                                   "</tr>",
                               "</table>",
                           "</td>"
