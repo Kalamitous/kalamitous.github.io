@@ -10,27 +10,27 @@ var scriptIDs = [
 var scriptNames = [
     "Realistic Player Damage",
     "Server Crash Menu & Auto Reconnection",
-    "DarkRP: DataSave",
+    "DataSave",
     "Admin Sit Bubble",
     "Rules Enforcer",
     "DarkRP: Gamble NPC"
 ];
 
 var scriptBanners = [
-    "https://media.gmodstore.com/script_banners/78c84a636b257a1d9bd54430e6f95af2_full.png",
-    "https://media.gmodstore.com/script_banners/4b0713475df444e27d44640c4b7446d1_full.png",
-    "https://media.gmodstore.com/script_banners/d6cc135121d8dcdf5a7cb119e529b142_full.png",
-    "https://media.gmodstore.com/script_banners/343024bdd2b3261795b45cda9917a293_full.png",
-    "https://media.gmodstore.com/script_banners/ea4b381c6eef3b13e7fea2aace2c68e6_full.png",
-    "https://media.gmodstore.com/script_banners/c34c01537188fe844c879cfa47ce1139_full.png"
+    "https://media.gmodstore.com/_/script_banners/78c84a636b257a1d9bd54430e6f95af2_full.png",
+    "https://media.gmodstore.com/_/script_banners/4b0713475df444e27d44640c4b7446d1_full.png",
+    "https://media.gmodstore.com/_/script_banners/d6cc135121d8dcdf5a7cb119e529b142_full.png",
+    "https://media.gmodstore.com/_/script_banners/343024bdd2b3261795b45cda9917a293_full.png",
+    "https://media.gmodstore.com/_/script_banners/ea4b381c6eef3b13e7fea2aace2c68e6_full.png",
+    "https://media.gmodstore.com/_/script_banners/c34c01537188fe844c879cfa47ce1139_full.png"
 ];
 
 var scriptPrices = [
     "$4.99",
-    "$3.99",
+    "$4.99",
     "$14.99",
     "$4.99",
-    "$3.99",
+    "$4.99",
     "$4.99"
 ];
 
@@ -80,7 +80,7 @@ $(function() {
             var id = $(this).attr("id");
             id = id.replace("b", "");
 
-            var win = window.open("https://scriptfodder.com/scripts/view/" + id, "_blank");
+            var win = window.open("https://gmodstore.com/market/view/" + id, "_blank");
             win.focus();
         } else {
             var id = $(this).attr("id");
