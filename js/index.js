@@ -1,10 +1,10 @@
 var scriptIDs = [
-    "722",
-    "814",
-    "908",
-    "920",
-    "1152",
-    "1454"
+    "realistic-player-damage",
+    "server-crash-menu-auto-reconnection",
+    "datasave-v2-0",
+    "admin-sit-bubble-v2-0",
+    "rules-enforcer",
+    "gamble-npc"
 ];
 
 var scriptNames = [
@@ -13,7 +13,7 @@ var scriptNames = [
     "DataSave",
     "Admin Sit Bubble",
     "Rules Enforcer",
-    "DarkRP: Gamble NPC"
+    "Gamble NPC"
 ];
 
 var scriptBanners = [
@@ -76,7 +76,7 @@ $(function() {
     });
 
     $(document).on("click", "button", function() {
-        if ($(this).attr("class") == "sfButton") {
+        if (($(this).attr("class")).includes("sfButton")) {
             var id = $(this).attr("id");
             id = id.replace("b", "");
 
